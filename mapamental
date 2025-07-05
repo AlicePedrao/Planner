@@ -1,0 +1,32 @@
+```mermaid
+graph TD
+    A[FALTA DE SEROTONINA] --> B(Sentimentos: Humor Baixo, Ansiedade, Irritabilidade, Tristeza);
+    B --> C{DESEJO POR CARBOIDRATOS SIMPLES<br>(Doces, Refinados)};
+    C --> D[CONSUMO RÁPIDO DE CARBOIDRATOS];
+    D --> E{PICO DE GLICOSE NO SANGUE};
+    E --> F[Aumento TEMPORÁRIO de Serotonina (pela entrada de Triptofano)];
+    E --> G[LIBERAÇÃO DE DOPAMINA<br>(Prazer, Recompensa Imediata)];
+    F & G --> H(Sensação de Bem-Estar e Alívio - Momentâneo);
+    H --> I[QUEDA RÁPIDA DE GLICOSE E NEUROTRANSMISSORES<br>(Pico e Queda)];
+    I --> J(Retorno do Mal-Estar<br>e Desconforto Emocional);
+    J --> K[BUSCA NOVAMENTE POR ALIMENTOS PRAZEROSOS<br>(Cérebro condicionado pela recompensa)];
+    K --> C; %% Retorna ao desejo por carboidratos, fechando o ciclo.
+
+    subgraph Hormônios Adicionais
+        L[ESTRESSE CRÔNICO] --> M(Aumento de CORTISOL);
+        M --> C;
+        N[RESISTÊNCIA À LEPTINA] --> K;
+        O[DESREGULAÇÃO DA INSULINA] --> I;
+    end
+
+    style A fill:#FFCCCC,stroke:#333,stroke-width:2px;
+    style B fill:#FFDDCC,stroke:#333,stroke-width:2px;
+    style C fill:#FFFFCC,stroke:#333,stroke-width:2px;
+    style D fill:#CCFFCC,stroke:#333,stroke-width:2px;
+    style E fill:#CCFFFF,stroke:#333,stroke-width:2px;
+    style F fill:#CCFFCC,stroke:#333,stroke-width:2px;
+    style G fill:#FFCCFF,stroke:#333,stroke-width:2px;
+    style H fill:#DDFFDD,stroke:#333,stroke-width:2px;
+    style I fill:#FFDDAA,stroke:#333,stroke-width:2px;
+    style J fill:#FFCCCC,stroke:#333,stroke-width:2px;
+    style K fill:#FFFFCC,stroke:#333,stroke-width:2px;
